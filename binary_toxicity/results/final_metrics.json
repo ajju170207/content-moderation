@@ -1,0 +1,27 @@
+{
+    "model": "distilbert-base-uncased",
+    "device": "mps",
+    "python_version": "3.13.9",
+    "pytorch_version": "2.14.0",
+    "transformers_version": "5.18.0",
+    "max_length": 256,
+    "epochs": 3,
+    "learning_rate": 2e-05,
+    "best_threshold": 0.30000000000000004,
+    "baseline": {
+        "accuracy": 0.9297551694787963,
+        "precision": 0.9335289356535815,
+        "recall": 0.9251980346936729,
+        "f1": 0.9293448154303269,
+        "roc_auc": 0.979032337310739,
+        "pr_auc": 0.9783880553703949
+    },
+    "fine_tuned": {
+        "accuracy": 0.9569418715265608,
+        "precision": 0.9479893815750664,
+        "recall": 0.9668103880477289,
+        "f1": 0.9573073868149324,
+        "roc_auc": 0.9928598917076106,
+        "pr_auc": 0.9927716935284925
+    }
+}

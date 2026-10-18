@@ -1,0 +1,97 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+gpu_env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local datasets
+dataset/
+datasets/
+data/
+MMHS150K/
+**/dataset/
+**/datasets/
+*.parquet
+*.csv
+*.tsv
+
+# Model weights and intermediate checkpoints
+**/checkpoint-*/
+checkpoints/
+*.pth
+*.pt
+*.keras
+*.h5
+*.onnx
+
+# Hugging Face and experiment caches
+hf_cache/
+cache/
+wandb/
+mlruns/
+
+# Generated temporary outputs
+outputs/
+*.tmp
+*.log
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+kaggle.json
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Keep project source code, notebooks, reports,
+# plots, and selected final model artifacts tracked.
+# Do not add broad rules such as models/ or artifacts/
+# unless those folders should be excluded entirely.
+
+# Local datasets
+**/dataset/
+**/datasets/
+**/data/
+*.csv
+*.parquet
+*.tsv
+
+# Virtual environments
+**/.venv/
+**/venv/
+**/gpu_env/
+
+# Training checkpoints and optimizer states
+**/checkpoint-*/
+**/training_output/
+**/optimizer.pt
+**/scheduler.pt
+**/rng_state.pth
+
+# Large model weights (download or train separately)
+*.safetensors
+*.pt
+*.pth
+*.keras
+*.h5
+*.onnx
+
+# Python and OS caches
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+*.joblib
+*.pkl
+# Training metadata
+**/training_args.bin
